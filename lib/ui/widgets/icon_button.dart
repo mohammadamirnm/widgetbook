@@ -47,7 +47,6 @@ class IconButtonState extends State<IconButton> {
       child: AnimatedScale(
         scale: _scale,
         duration: const Duration(milliseconds: 100),
-        child: Icon(widget.icon),
       ),
     );
   }
