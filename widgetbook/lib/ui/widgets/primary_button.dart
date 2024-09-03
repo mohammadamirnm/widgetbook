@@ -6,4 +6,15 @@ import 'package:groceries_app/ui/ui.dart';
 import 'package:widgetbook/widgetbook.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 
-/// Add Widgetbook use-case here
+@UseCase(
+  type: PrimaryButton,
+  name: 'Default',
+  designLink:
+      'https://www.figma.com/design/HsANkdhbsCNTkXBzNJRNLD/Groceries-Demo?node-id=7340-24471&node-type=INSTANCE&t=eAQjqUkePqkQ7pBy-0',
+)
+Widget buildPrimaryButtonUseCase(BuildContext context) {
+  return PrimaryButton(
+    content: context.knobs.string(label: 'Title', initialValue: 'PrimaryButton'),
+    onPressed: () {},
+  );
+}
